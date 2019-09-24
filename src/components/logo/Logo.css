@@ -1,0 +1,22 @@
+.logo {
+  margin: 142px auto 125px auto;
+  text-align: center;
+}
+
+.logo__img {
+  height: 69px;
+  width: 315px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 615px) {
+  .logo {
+    margin: 43px auto 37px auto;
+  }
+
+  .logo__img {
+    height: 40px;
+    width: 182px;
+    padding-right: 4px;
+  }
+}

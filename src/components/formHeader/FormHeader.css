@@ -1,0 +1,23 @@
+.form-header {
+  color: #262626;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.form-header_position {
+  margin: 0px auto 0px auto;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-align: center;
+}
+
+@media screen and (max-width: 615px) {
+  .form-header {
+    font-size: 20px;
+  }
+
+  .form-header_position {
+    padding: 32px;
+  }
+}
