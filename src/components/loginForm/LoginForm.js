@@ -39,7 +39,6 @@ class LoginForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     let credentials = `{"email":"${this.state.email}","password":"${this.state.password}"}`;
-    console.log(credentials);
     const url = "https://us-central1-mercdev-academy.cloudfunctions.net/login";
     fetch(url, {
       method: "POST",
