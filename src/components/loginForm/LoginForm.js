@@ -1,5 +1,5 @@
 import React from "react";
-import "./LoginForm2.css";
+import "./LoginForm.css";
 
 class LoginForm2 extends React.Component {
   constructor(props) {
