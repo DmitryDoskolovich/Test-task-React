@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="authorization-page authorization-page_default">
+    <div className="authorization-page authorization-page_default page__authorization-page_position page__authorization-page_size ">
       <Logo />
       <LoginForm />
     </div>
