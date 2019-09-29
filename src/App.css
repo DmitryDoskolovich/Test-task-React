@@ -6,3 +6,27 @@
   width: 100vw;
   margin: auto;
 }
+
+.app__logo_position {
+  margin: 142px auto 125px auto;
+  text-align: center;
+}
+
+.app__login-form_position {
+  display: block;
+  margin: auto;
+}
+
+.app__login-form_size {
+  width: 600px;
+  height: auto;
+}
+
+@media screen and (max-width: 615px) {
+  .app__logo_position {
+    margin: 43px auto 37px auto;
+  }
+  .app__login-form_size {
+    width: 288px;
+  }
+}

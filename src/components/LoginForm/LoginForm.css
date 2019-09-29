@@ -4,16 +4,6 @@
     url(../../resources/fonts/GothamPro-Medium.woff2) format("woff2");
 }
 
-.app__login-form_position {
-  display: block;
-  margin: auto;
-}
-
-.app__login-form_size {
-  width: 600px;
-  height: auto;
-}
-
 .login-form_default {
   background-color: #ffffff;
   border: none;
@@ -125,9 +115,6 @@
 }
 
 @media screen and (max-width: 615px) {
-  .app__login-form_size {
-    width: 288px;
-  }
   .login-form__header {
     font-size: 20px;
     padding: 32px;
