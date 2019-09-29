@@ -5,9 +5,15 @@
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.15);
   color: #262626;
   display: block;
+}
+
+.app__login-form_position {
+  margin: auto;
+}
+
+.app__login-form_size {
   width: 600px;
   height: auto;
-  margin: auto;
 }
 
 .login-form__header {
@@ -85,10 +91,6 @@
   margin: 0px auto 32px auto;
   padding-top: 12px;
   padding-bottom: 12px;
-}
-
-.login-form__button-container {
-  padding-bottom: 1px;
 }
 
 .login-form__button {

@@ -59,7 +59,10 @@ class LoginForm2 extends React.Component {
     const isLoggedIn = this.state.isLoggedIn;
     const isAuthError = this.state.isAuthError;
     return (
-      <form className="login-form app__login-form" onSubmit={this.handleSubmit}>
+      <form
+        className="login-form app__login-form app__login-form_position app__login-form_size"
+        onSubmit={this.handleSubmit}
+      >
         {isLoggedIn ? (
           <div className="login-form__content login-form__content_logged-in">
             <img

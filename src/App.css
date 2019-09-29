@@ -4,7 +4,7 @@
     url(./resources/fonts/GothamPro-Medium.woff2) format("woff2");
 }
 
-.authorization-page {
+.authorization-page_default {
   background-image: url(./resources/images/background@2x.png);
   background-size: cover;
   font-family: Gotham, "Montserrat", sans-serif;
