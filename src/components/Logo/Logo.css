@@ -1,4 +1,4 @@
-.app__logo {
+.app__logo_position {
   margin: 142px auto 125px auto;
   text-align: center;
 }
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 615px) {
-  .app__logo {
+  .app__logo_position {
     margin: 43px auto 37px auto;
   }
 

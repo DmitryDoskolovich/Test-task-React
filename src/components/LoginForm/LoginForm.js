@@ -60,7 +60,7 @@ class LoginForm2 extends React.Component {
     const isAuthError = this.state.isAuthError;
     return (
       <form
-        className="login-form app__login-form app__login-form_position app__login-form_size"
+        className="login-form login-form_default app__login-form_position app__login-form_size"
         onSubmit={this.handleSubmit}
       >
         {isLoggedIn ? (
@@ -84,8 +84,8 @@ class LoginForm2 extends React.Component {
             <input
               className={
                 isAuthError
-                  ? "login-form__email login-form__email_error"
-                  : "login-form__email "
+                  ? "login-form__input login-form__input_email login-form__email_error"
+                  : "login-form__input login-form__input_email"
               }
               name="email"
               type="email"
@@ -94,7 +94,7 @@ class LoginForm2 extends React.Component {
               onChange={this.handleChangeValueEmail}
             />
             <input
-              className="login-form__password"
+              className="login-form__input login-form__input_password"
               name="password"
               type="password"
               placeholder="Password"
