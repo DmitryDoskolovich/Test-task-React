@@ -84,7 +84,7 @@ class LoginForm2 extends React.Component {
             <input
               className={
                 isAuthError
-                  ? "login-form__input login-form__email_error"
+                  ? "login-form__input login-form__input_error"
                   : "login-form__input"
               }
               name="email"

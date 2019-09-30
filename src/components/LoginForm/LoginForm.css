@@ -46,7 +46,7 @@
   margin: 0px auto 32px auto;
 }
 
-.login-form__email_error {
+.login-form__input_error {
   border: 1px solid #ed4159;
   color: #ed4159;
 }
