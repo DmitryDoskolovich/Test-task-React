@@ -60,11 +60,11 @@ class LoginForm2 extends React.Component {
     const isAuthError = this.state.isAuthError;
     return (
       <form
-        className="login-form login-form_default app__login-form_position app__login-form_size"
+        className="login-form app__login-form_position app__login-form_size"
         onSubmit={this.handleSubmit}
       >
         {isLoggedIn ? (
-          <div className="login-form__content login-form__content_logged-in">
+          <div className="login-form__content">
             <img
               className="login-form__avatar"
               src={this.state.avatarUrl}
@@ -72,20 +72,20 @@ class LoginForm2 extends React.Component {
             />
             <p className="login-form__avatar-name">{this.state.avatarName}</p>
             <input
-              className="login-form__button login-form__button_logoutbtn"
+              className="login-form__button"
               type="submit"
               value="Logout"
               onClick={this.handleOnClickLogout}
             ></input>
           </div>
         ) : (
-          <div className="login-form__content login-form__content_not-logged-in">
+          <div className="login-form__content">
             <h3 className="login-form__header">Log In</h3>
             <input
               className={
                 isAuthError
-                  ? "login-form__input login-form__input_email login-form__email_error"
-                  : "login-form__input login-form__input_email"
+                  ? "login-form__input login-form__email_error"
+                  : "login-form__input"
               }
               name="email"
               type="email"
@@ -94,7 +94,7 @@ class LoginForm2 extends React.Component {
               onChange={this.handleChangeValueEmail}
             />
             <input
-              className="login-form__input login-form__input_password"
+              className="login-form__input"
               name="password"
               type="password"
               placeholder="Password"
@@ -107,7 +107,7 @@ class LoginForm2 extends React.Component {
               </p>
             ) : null}
             <input
-              className="login-form__button login-form__button_loginbtn"
+              className="login-form__button"
               type="submit"
               name="submit"
               value="Login"
