@@ -4,7 +4,7 @@
     url(../../resources/fonts/GothamPro-Medium.woff2) format("woff2");
 }
 
-.login-form_default {
+.login-form {
   background-color: #ffffff;
   border: none;
   border-radius: 8px;
