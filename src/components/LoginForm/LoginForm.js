@@ -1,7 +1,7 @@
 import React from "react";
 import "./LoginForm.css";
 
-class LoginForm2 extends React.Component {
+class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -60,7 +60,8 @@ class LoginForm2 extends React.Component {
     const isAuthError = this.state.isAuthError;
     return (
       <form
-        className="login-form app__login-form_position app__login-form_size"
+        //className="login-form app__login-form_position app__login-form_size"
+        className={`login-form ${this.props.className}`}
         onSubmit={this.handleSubmit}
       >
         {isLoggedIn ? (
@@ -119,4 +120,4 @@ class LoginForm2 extends React.Component {
   }
 }
 
-export default LoginForm2;
+export default LoginForm;
