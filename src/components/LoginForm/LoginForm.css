@@ -114,16 +114,6 @@
   text-align: center;
 }
 
-.login-form__user-profile_size {
-  width: 600px;
-  height: auto;
-}
-.login-form__user-profile_position {
-  display: block;
-  margin: auto;
-  padding: 1px;
-}
-
 @media screen and (max-width: 615px) {
   .login-form__header {
     font-size: 20px;
@@ -140,8 +130,5 @@
   }
   .login-form__button {
     margin: 40px auto 48px auto;
-  }
-  .login-form__user-profile_size {
-    width: 288px;
   }
 }
