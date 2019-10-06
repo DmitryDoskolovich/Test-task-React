@@ -9,15 +9,12 @@ class LoginForm extends React.Component {
       email: "",
       password: ""
     };
-    this.handleChangeValueEmail = this.handleChangeValueEmail.bind(this);
-    this.handleChangeValuePassword = this.handleChangeValuePassword.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChangeValueEmail = e => this.setState({ email: e.target.value });
   handleChangeValuePassword = e => this.setState({ password: e.target.value });
 
-  handleSubmit(event) {
+  handleSubmit = event => {
     event.preventDefault();
     let credentials = `{"email":"${this.state.email}","password":"${this.state.password}"}`;
     const url = "https://us-central1-mercdev-academy.cloudfunctions.net/login";
@@ -39,7 +36,7 @@ class LoginForm extends React.Component {
         }
       })
       .catch(error => console.error("Fetch error", error));
-  }
+  };
 
   render() {
     const isAuthError = this.state.isAuthError;
