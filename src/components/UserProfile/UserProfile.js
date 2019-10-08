@@ -9,18 +9,20 @@ class UserProfile extends React.Component {
   render() {
     return (
       <div className={classNames("user-profile", this.props.className)}>
-        <img
-          className="user-profile__avatar"
-          src={this.props.avatarUrl}
-          alt="avatar"
-        />
-        <p className="user-profile__user-name">{this.props.userName}</p>
-        <input
-          className="user-profile__logout-button"
-          type="submit"
-          value="Logout"
-          onClick={this.props.onClick}
-        ></input>
+        <div className="user-profile__content">
+          <img
+            className="user-profile__avatar"
+            src={this.props.avatarUrl}
+            alt="avatar"
+          />
+          <p className="user-profile__user-name">{this.props.userName}</p>
+          <input
+            className="user-profile__logout-button"
+            type="submit"
+            value="Logout"
+            onClick={this.props.onClick}
+          ></input>
+        </div>
       </div>
     );
   }

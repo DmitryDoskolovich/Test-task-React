@@ -32,17 +32,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="authorization-page">
-        <Logo className="app__logo_position" />
+        <Logo className="app__logo_properties" />
         {this.state.isLoggedIn ? (
           <UserProfile
-            className="app__user-profile_properties"
+            className="app__window_properties"
             avatarUrl={this.state.avatarUrl}
             userName={this.state.userName}
             onClick={this.handleOnClickLogout}
           />
         ) : (
           <LoginForm
-            className="app__login-form_properties"
+            className="app__window_properties"
             loginSuccessful={this.loginSuccessful}
           />
         )}

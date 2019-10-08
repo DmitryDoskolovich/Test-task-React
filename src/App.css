@@ -7,34 +7,24 @@
   width: 100vw;
 }
 
-.app__logo_position {
+.app__logo_properties {
   margin: 142px auto 125px auto;
   text-align: center;
 }
 
-.app__login-form_properties {
+.app__window_properties {
   display: block;
   margin: auto;
   width: 600px;
   height: auto;
-}
-
-.app__user-profile_properties {
-  width: 600px;
-  height: auto;
-  display: block;
-  margin: auto;
-  padding: 1px;
 }
 
 @media screen and (max-width: 615px) {
-  .app__logo_position {
+  .app__logo_properties {
     margin: 43px auto 37px auto;
   }
-  .app__login-form_properties {
-    width: 288px;
-  }
-  .app__user-profile_properties {
+
+  .app__window_properties {
     width: 288px;
   }
 }

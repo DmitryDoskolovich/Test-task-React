@@ -13,6 +13,10 @@
   font-family: Gotham, "Montserrat", sans-serif;
 }
 
+.user-profile__content {
+  padding: 1px;
+}
+
 .user-profile__avatar {
   width: 128px;
   height: 128px;
@@ -44,7 +48,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  margin: 48px auto 60px auto;
+  margin: 56px auto 60px auto;
   padding: 17px 56px 17px 56px;
 }
 
