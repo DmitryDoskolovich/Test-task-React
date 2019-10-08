@@ -1,12 +1,14 @@
 import React from "react";
 import "./UserProfile.css";
+import classNames from "classnames";
+
 class UserProfile extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <div className={`user-profile ${this.props.className}`}>
+      <div className={classNames("user-profile", this.props.className)}>
         <img
           className="user-profile__avatar"
           src={this.props.avatarUrl}

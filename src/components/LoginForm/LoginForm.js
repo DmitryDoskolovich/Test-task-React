@@ -1,5 +1,6 @@
 import React from "react";
 import "./LoginForm.css";
+import classNames from "classnames";
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -42,7 +43,7 @@ class LoginForm extends React.Component {
     const isAuthError = this.state.isAuthError;
     return (
       <form
-        className={`login-form ${this.props.className}`}
+        className={classNames("login-form", this.props.className)}
         onSubmit={this.handleSubmit}
       >
         <div className="login-form__content">
