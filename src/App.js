@@ -35,14 +35,14 @@ class App extends React.Component {
         <Logo className="app__logo_position" />
         {this.state.isLoggedIn ? (
           <UserProfile
-            className="app__user-profile_size app__user-profile_position"
+            className="app__user-profile_properties"
             avatarUrl={this.state.avatarUrl}
             userName={this.state.userName}
             onClick={this.handleOnClickLogout}
           />
         ) : (
           <LoginForm
-            className="app__login-form_position app__login-form_size"
+            className="app__login-form_properties"
             loginSuccessful={this.loginSuccessful}
           />
         )}

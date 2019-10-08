@@ -12,21 +12,16 @@
   text-align: center;
 }
 
-.app__login-form_position {
+.app__login-form_properties {
   display: block;
   margin: auto;
-}
-
-.app__login-form_size {
   width: 600px;
   height: auto;
 }
 
-.app__user-profile_size {
+.app__user-profile_properties {
   width: 600px;
   height: auto;
-}
-.app__user-profile_position {
   display: block;
   margin: auto;
   padding: 1px;
@@ -36,10 +31,10 @@
   .app__logo_position {
     margin: 43px auto 37px auto;
   }
-  .app__login-form_size {
+  .app__login-form_properties {
     width: 288px;
   }
-  .app__user-profile_size {
+  .app__user-profile_properties {
     width: 288px;
   }
 }
