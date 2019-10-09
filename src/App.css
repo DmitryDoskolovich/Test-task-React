@@ -1,28 +1,30 @@
-.authorization-page_default {
+.app {
   background-image: url(./resources/images/background@2x.png);
   background-size: cover;
+  display: inline-block;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
 }
 
-.app__logo_position {
+.app__logo {
   margin: 142px auto 125px auto;
   text-align: center;
 }
 
-.app__login-form_position {
+.app__content {
   display: block;
   margin: auto;
-}
-
-.app__login-form_size {
   width: 600px;
   height: auto;
 }
 
 @media screen and (max-width: 615px) {
-  .app__logo_position {
+  .app__logo {
     margin: 43px auto 37px auto;
   }
-  .app__login-form_size {
+
+  .app__content {
     width: 288px;
   }
 }

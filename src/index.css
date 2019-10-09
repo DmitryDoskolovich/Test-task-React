@@ -1,12 +1,3 @@
 body {
   margin: 0px;
 }
-.page__authorization-page_position {
-  display: inline-block;
-  margin: auto;
-}
-
-.page__authorization-page_size {
-  height: 100vh;
-  width: 100vw;
-}
