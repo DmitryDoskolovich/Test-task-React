@@ -12,8 +12,6 @@ class App extends React.Component {
       avatarUrl: "",
       userName: ""
     };
-    this.loginSuccessful = this.loginSuccessful.bind(this);
-    this.handleOnClickLogout = this.handleOnClickLogout.bind(this);
   }
 
   handleOnClickLogout = e =>
@@ -24,25 +22,27 @@ class App extends React.Component {
     });
 
   loginSuccessful = responseObj => {
-    this.setState({ isLoggedIn: true });
-    this.setState({ avatarUrl: responseObj["photoUrl"] });
-    this.setState({ userName: responseObj["name"] });
+    this.setState({
+      isLoggedIn: true,
+      avatarUrl: responseObj["photoUrl"],
+      userName: responseObj["name"]
+    });
   };
 
   render() {
     return (
-      <div className="authorization-page">
-        <Logo className="app__logo_properties" />
+      <div className="app">
+        <Logo className="app__logo" />
         {this.state.isLoggedIn ? (
           <UserProfile
-            className="app__window_properties"
+            className="app__content"
             avatarUrl={this.state.avatarUrl}
             userName={this.state.userName}
             onClick={this.handleOnClickLogout}
           />
         ) : (
           <LoginForm
-            className="app__window_properties"
+            className="app__content"
             loginSuccessful={this.loginSuccessful}
           />
         )}

@@ -1,4 +1,4 @@
-.authorization-page {
+.app {
   background-image: url(./resources/images/background@2x.png);
   background-size: cover;
   display: inline-block;
@@ -7,12 +7,12 @@
   width: 100vw;
 }
 
-.app__logo_properties {
+.app__logo {
   margin: 142px auto 125px auto;
   text-align: center;
 }
 
-.app__window_properties {
+.app__content {
   display: block;
   margin: auto;
   width: 600px;
@@ -20,11 +20,11 @@
 }
 
 @media screen and (max-width: 615px) {
-  .app__logo_properties {
+  .app__logo {
     margin: 43px auto 37px auto;
   }
 
-  .app__window_properties {
+  .app__content {
     width: 288px;
   }
 }
