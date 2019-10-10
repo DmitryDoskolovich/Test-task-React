@@ -1,5 +1,6 @@
 import React from "react";
 import "./LoginForm.css";
+import Button from "../Button/Button";
 import classNames from "classnames";
 
 class LoginForm extends React.Component {
@@ -73,12 +74,7 @@ class LoginForm extends React.Component {
               E-Mail or password is incorrect
             </p>
           ) : null}
-          <input
-            className="login-form__button"
-            type="submit"
-            name="submit"
-            value="Login"
-          />
+          <Button className="login-form__button" value="Login" />
         </div>
       </form>
     );

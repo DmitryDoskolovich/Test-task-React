@@ -1,5 +1,6 @@
 import React from "react";
 import "./UserProfile.css";
+import Button from "../Button/Button";
 import classNames from "classnames";
 
 class UserProfile extends React.Component {
@@ -16,12 +17,11 @@ class UserProfile extends React.Component {
             alt="avatar"
           />
           <p className="user-profile__user-name">{this.props.userName}</p>
-          <input
+          <Button
             className="user-profile__logout-button"
-            type="submit"
             value="Logout"
             onClick={this.props.onClick}
-          ></input>
+          />
         </div>
       </div>
     );
