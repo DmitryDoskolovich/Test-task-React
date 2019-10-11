@@ -1,9 +1,3 @@
-@font-face {
-  font-family: Gotham;
-  src: local(GothamPro-Medium),
-    url(../../resources/fonts/GothamPro-Medium.woff2) format("woff2");
-}
-
 .user-profile {
   background-color: #ffffff;
   border: none;

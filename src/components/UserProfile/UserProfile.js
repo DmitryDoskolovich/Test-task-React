@@ -20,7 +20,9 @@ class UserProfile extends React.Component {
           <Button
             className="user-profile__logout-button"
             value="Logout"
+            type="button"
             onClick={this.props.onClick}
+            buttonText="Logout"
           />
         </div>
       </div>

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Gotham;
+  src: local(GothamPro-Medium),
+    url(../src/resources/fonts/GothamPro-Medium.woff2) format("woff2");
+}
+
 .app {
   background-image: url(./resources/images/background@2x.png);
   background-size: cover;

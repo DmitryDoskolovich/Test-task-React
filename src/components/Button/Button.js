@@ -5,13 +5,12 @@ import classNames from "classnames";
 class Button extends React.Component {
   render() {
     return (
-      <input
+      <button
+        {...this.props}
         className={classNames("button", this.props.className)}
-        type="submit"
-        name="submit"
-        value={this.props.value}
-        onClick={this.props.onClick}
-      />
+      >
+        {this.props.buttonText}
+      </button>
     );
   }
 }

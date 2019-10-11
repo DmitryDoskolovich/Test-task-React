@@ -1,9 +1,3 @@
-@font-face {
-  font-family: Gotham;
-  src: local(GothamPro-Medium),
-    url(../../resources/fonts/GothamPro-Medium.woff2) format("woff2");
-}
-
 .login-form {
   background-color: #ffffff;
   border: none;
@@ -29,27 +23,10 @@
 }
 
 .login-form__input {
-  border: none;
-  border-radius: 4px;
-  background-color: #f1f1f1;
   display: block;
-  font-family: Gotham, "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  opacity: 0.8;
   height: 48px;
   width: 504px;
-  padding-left: 16px;
   margin: 0px auto 32px auto;
-}
-
-.login-form__input_error {
-  border: 1px solid #ed4159;
-  color: #ed4159;
 }
 
 .login-form__error-message {

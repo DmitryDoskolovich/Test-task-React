@@ -1,5 +1,6 @@
 import React from "react";
 import "./LoginForm.css";
+import Input from "../Input/Input";
 import Button from "../Button/Button";
 import classNames from "classnames";
 
@@ -49,19 +50,16 @@ class LoginForm extends React.Component {
       >
         <div className="login-form__content">
           <h3 className="login-form__header">Log In</h3>
-          <input
-            className={
-              isAuthError
-                ? "login-form__input login-form__input_error"
-                : "login-form__input"
-            }
+          <Input
+            className="login-form__input"
             name="email"
             type="email"
             placeholder="E-Mail"
             value={this.state.email}
             onChange={this.handleChangeValueEmail}
+            isAuthError={this.state.isAuthError}
           />
-          <input
+          <Input
             className="login-form__input"
             name="password"
             type="password"
@@ -74,7 +72,12 @@ class LoginForm extends React.Component {
               E-Mail or password is incorrect
             </p>
           ) : null}
-          <Button className="login-form__button" value="Login" />
+          <Button
+            className="login-form__button"
+            value="Login"
+            type="submit"
+            buttonText="Login"
+          />
         </div>
       </form>
     );
