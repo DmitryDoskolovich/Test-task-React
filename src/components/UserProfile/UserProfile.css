@@ -1,14 +1,6 @@
 .user-profile {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.15);
   color: #262626;
   font-family: Gotham, "Montserrat", sans-serif;
-}
-
-.user-profile__content {
-  padding: 1px;
 }
 
 .user-profile__avatar {
@@ -27,6 +19,7 @@
   opacity: 0.8;
   margin: auto;
   text-align: center;
+  padding: 2px;
 }
 
 .user-profile__logout-button {

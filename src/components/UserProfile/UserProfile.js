@@ -4,9 +4,6 @@ import Button from "../Button/Button";
 import classNames from "classnames";
 
 class UserProfile extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className={classNames("user-profile", this.props.className)}>
@@ -22,8 +19,9 @@ class UserProfile extends React.Component {
             value="Logout"
             type="button"
             onClick={this.props.onClick}
-            buttonText="Logout"
-          />
+          >
+            Logout
+          </Button>
         </div>
       </div>
     );

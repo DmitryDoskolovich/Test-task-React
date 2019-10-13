@@ -48,37 +48,32 @@ class LoginForm extends React.Component {
         className={classNames("login-form", this.props.className)}
         onSubmit={this.handleSubmit}
       >
-        <div className="login-form__content">
-          <h3 className="login-form__header">Log In</h3>
-          <Input
-            className="login-form__input"
-            name="email"
-            type="email"
-            placeholder="E-Mail"
-            value={this.state.email}
-            onChange={this.handleChangeValueEmail}
-            isAuthError={this.state.isAuthError}
-          />
-          <Input
-            className="login-form__input"
-            name="password"
-            type="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChangeValuePassword}
-          />
-          {isAuthError ? (
-            <p className="login-form__error-message">
-              E-Mail or password is incorrect
-            </p>
-          ) : null}
-          <Button
-            className="login-form__button"
-            value="Login"
-            type="submit"
-            buttonText="Login"
-          />
-        </div>
+        <h3 className="login-form__header">Log In</h3>
+        <Input
+          className="login-form__input"
+          name="email"
+          type="email"
+          placeholder="E-Mail"
+          value={this.state.email}
+          onChange={this.handleChangeValueEmail}
+          isAuthError={this.state.isAuthError}
+        />
+        <Input
+          className="login-form__input"
+          name="password"
+          type="password"
+          placeholder="Password"
+          value={this.state.password}
+          onChange={this.handleChangeValuePassword}
+        />
+        {isAuthError ? (
+          <p className="login-form__error-message">
+            E-Mail or password is incorrect
+          </p>
+        ) : null}
+        <Button className="login-form__button" value="Login" type="submit">
+          Login
+        </Button>
       </form>
     );
   }
