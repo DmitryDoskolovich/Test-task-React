@@ -56,7 +56,7 @@ class LoginForm extends React.Component {
           placeholder="E-Mail"
           value={this.state.email}
           onChange={this.handleChangeValueEmail}
-          error={this.state.isAuthError}
+          isError={this.state.isAuthError}
         />
         <Input
           className="login-form__input"
