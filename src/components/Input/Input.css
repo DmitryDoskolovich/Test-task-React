@@ -1,0 +1,19 @@
+.input {
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-family: Gotham, "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  opacity: 0.8;
+  padding-left: 16px;
+}
+
+.input_error {
+  border: 1px solid #ed4159;
+  color: #ed4159;
+}

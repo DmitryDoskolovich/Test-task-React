@@ -1,5 +1,7 @@
 import React from "react";
 import "./LoginForm.css";
+import Input from "../Input/Input";
+import Button from "../Button/Button";
 import classNames from "classnames";
 
 class LoginForm extends React.Component {
@@ -46,40 +48,32 @@ class LoginForm extends React.Component {
         className={classNames("login-form", this.props.className)}
         onSubmit={this.handleSubmit}
       >
-        <div className="login-form__content">
-          <h3 className="login-form__header">Log In</h3>
-          <input
-            className={
-              isAuthError
-                ? "login-form__input login-form__input_error"
-                : "login-form__input"
-            }
-            name="email"
-            type="email"
-            placeholder="E-Mail"
-            value={this.state.email}
-            onChange={this.handleChangeValueEmail}
-          />
-          <input
-            className="login-form__input"
-            name="password"
-            type="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChangeValuePassword}
-          />
-          {isAuthError ? (
-            <p className="login-form__error-message">
-              E-Mail or password is incorrect
-            </p>
-          ) : null}
-          <input
-            className="login-form__button"
-            type="submit"
-            name="submit"
-            value="Login"
-          />
-        </div>
+        <h3 className="login-form__header">Log In</h3>
+        <Input
+          className="login-form__input"
+          name="email"
+          type="email"
+          placeholder="E-Mail"
+          value={this.state.email}
+          onChange={this.handleChangeValueEmail}
+          isError={this.state.isAuthError}
+        />
+        <Input
+          className="login-form__input"
+          name="password"
+          type="password"
+          placeholder="Password"
+          value={this.state.password}
+          onChange={this.handleChangeValuePassword}
+        />
+        {isAuthError ? (
+          <p className="login-form__error-message">
+            E-Mail or password is incorrect
+          </p>
+        ) : null}
+        <Button className="login-form__button" value="Login" type="submit">
+          Login
+        </Button>
       </form>
     );
   }

@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./components/Logo/Logo";
 import LoginForm from "./components/LoginForm/LoginForm";
 import UserProfile from "./components/UserProfile/UserProfile";
+import Wrapper from "./components/Wrapper/Wrapper";
 import "./App.css";
 
 class App extends React.Component {
@@ -34,17 +35,21 @@ class App extends React.Component {
       <div className="app">
         <Logo className="app__logo" />
         {this.state.isLoggedIn ? (
-          <UserProfile
-            className="app__content"
-            avatarUrl={this.state.avatarUrl}
-            userName={this.state.userName}
-            onClick={this.handleOnClickLogout}
-          />
+          <Wrapper>
+            <UserProfile
+              className="app__content"
+              avatarUrl={this.state.avatarUrl}
+              userName={this.state.userName}
+              onClick={this.handleOnClickLogout}
+            />
+          </Wrapper>
         ) : (
-          <LoginForm
-            className="app__content"
-            loginSuccessful={this.loginSuccessful}
-          />
+          <Wrapper>
+            <LoginForm
+              className="app__content"
+              loginSuccessful={this.loginSuccessful}
+            />
+          </Wrapper>
         )}
       </div>
     );
