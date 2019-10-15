@@ -8,7 +8,7 @@ class Button extends React.Component {
       <button
         {...this.props}
         className={classNames("button", this.props.className)}
-      ></button>
+      />
     );
   }
 }

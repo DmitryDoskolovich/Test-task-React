@@ -4,13 +4,13 @@ import classNames from "classnames";
 
 class Input extends React.Component {
   render() {
-    const { isAuthError, ...other } = { ...this.props };
+    const { error, ...other } = { ...this.props };
     return (
       <input
         {...other}
         className={classNames(
           "input",
-          { input_error: isAuthError },
+          { input_error: error },
           this.props.className
         )}
       />
